@@ -1,0 +1,24 @@
+{
+  "tasks": [
+      {
+          "id": 1,
+          "name": "Learn JavaScript"
+      },
+      {
+          "id": 2,
+          "name": "Clean all the house"
+      },
+      {
+          "id": 3,
+          "name": "Prepare suitcase"
+      },
+      {
+          "id": 4,
+          "name": "Study software development"
+      },
+      {
+          "id": 5,
+          "name": "Do sport"
+      }
+  ]
+}

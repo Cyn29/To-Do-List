@@ -30,3 +30,28 @@ For support, email cyn2993@gmail.com or follow my github profile: https://github
 ## Feedback
 
 If you have any feedback, please reach out to me at cyn2993@gmail.com
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Cyn29/To-Do-List
+```
+
+Go to the project directory
+
+```bash
+  cd todolist
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the json-server
+```bash
+  json-server --watch index.json
+```

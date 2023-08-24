@@ -4,14 +4,14 @@
       "title": "prueba 1",
       "description": "prueba 1",
       "id": 1,
-      "completed": true
+      "completed": false
     },
     {
       "title": "prueba 2",
       "description": "prueba 2",
       "createdAt": "2023-08-18",
       "dueDate": "2023-09-01",
-      "completed": true,
+      "completed": false,
       "id": 2
     },
     {

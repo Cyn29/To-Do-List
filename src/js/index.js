@@ -58,7 +58,7 @@ addTaskIcon.addEventListener("click", async () => {
         let data = await result.json();
         let taskItem = document.createElement("li");
         taskItem.classList.add("task-item");
-        taskItem.innerHTML = `<input type="checkbox" onclick="postCheckedTask(${data.id}, this)" id="${data.id}"> <strong>${data.title}</strong> ${data.description} <img src="../assets/edit.png" class="edit-image" onclick="editTask(${data.id})" id="${data.id}"/> <img src="../assets/garbage.png" class="delete-image" onclick="deleteTask(${data.id})" id="${data.id}"/>`;
+        taskItem.innerHTML = `<input type="checkbox" onclick="postCheckedTask(${data.id}, this)" id="${data.id}"> <strong>${data.title}</strong> ${data.description} <img src="assets/edit.png" class="edit-image" onclick="editTask(${data.id})" id="${data.id}"/> <img src="assets/garbage.png" class="delete-image" onclick="deleteTask(${data.id})" id="${data.id}"/>`;
         taskList.appendChild(taskItem);
     } else {
         Swal.fire({

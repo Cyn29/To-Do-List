@@ -14,7 +14,7 @@ async function showTasksInScreen() {
         taskItem.classList.add("task-item");
 
         let checkedAttribute = task.completed ? "checked" : "";
-        taskItem.innerHTML = `<input type="checkbox" onclick="postCheckedTask(${task.id}, this)" ${checkedAttribute} id="${task.id}"> <strong>${task.title}</strong> ${task.description} <img src="../../src/assets/edit.png" class="edit-image" onclick="editTask(${task.id})" id="${task.id}"/> <img src="../../src/assets/garbage.png" class="delete-image" onclick="deleteTask(${task.id})" id="${task.id}"/>`;
+        taskItem.innerHTML = `<input type="checkbox" onclick="postCheckedTask(${task.id}, this)" ${checkedAttribute} id="${task.id}"> <strong>${task.title}</strong> ${task.description} <img src="src/assets/edit.png" class="edit-image" onclick="editTask(${task.id})" id="${task.id}"/> <img src="src/assets/garbage.png" class="delete-image" onclick="deleteTask(${task.id})" id="${task.id}"/>`;
 
         taskList.appendChild(taskItem);
     });
@@ -63,7 +63,7 @@ addTaskIcon.addEventListener("click", async () => {
     } else {
         Swal.fire({
             title: "Complete your task!",
-            imageUrl: "../../src/assets/meme-patrick-star.gif",
+            imageUrl: "src/assets/meme-patrick-star.gif",
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: "Gif image in sweet alert",
@@ -112,8 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
             taskItem.innerHTML = `
                 <input type="checkbox" onclick="postCheckedTask(${task.id}, this)" ${checkedAttribute} id="${task.id}">
                 <strong>${task.title}</strong> ${task.description}
-                <img src="../../src/assets/edit.png" class="edit-image" onclick="editTask(${task.id})" id="${task.id}"/>
-                <img src="../../src/assets/garbage.png" class="delete-image" onclick="deleteTask(${task.id})" id="${task.id}"/>
+                <img src="src/assets/edit.png" class="edit-image" onclick="editTask(${task.id})" id="${task.id}"/>
+                <img src="src/assets/garbage.png" class="delete-image" onclick="deleteTask(${task.id})" id="${task.id}"/>
             `;
 
             taskList.appendChild(taskItem);
@@ -139,7 +139,7 @@ async function postCheckedTask(id, checkbox) {
 
 async function editTask(id) {
     localStorage.setItem("editId", id);
-    window.location.href = "../edit.html";
+    window.location.href = "edit.html";
 }
 
 async function deleteTask(id) {

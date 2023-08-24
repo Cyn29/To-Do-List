@@ -22,7 +22,7 @@ async function saveData () {
                 description: descriptionValue,
             }),
         });
-        window.location.href="../index.html"
+        window.location.href="index.html"
     }
 }
 

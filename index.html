@@ -4,29 +4,53 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" type="text/css" href="./styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="./src/styles/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./src/styles/styles.css" />
     </head>
     <body>
         <main>
             <div class="container">
                 <header class="container__header">
                     <h1 class="container__title">TO DO LIST</h1>
-                    <img class="container__image" src="./assets/to-do-list.png" alt="to do list icon" />
+                    <img
+                        class="container__image"
+                        src="/src/assets/to-do-list.png"
+                        alt="to do list icon" />
                 </header>
                 <section>
                     <div class="container__form">
-                        <input class="container__form--placeholder--title" id="input-title" type="text" placeholder="Añadir título" >
-                        <input class="container__form--placeholder--description" id="input-description" type="text" placeholder="Añadir descripción">
-                        <img class="add__image" id="add-img" src="./assets/plus.png"/>
+                        <input
+                            class="container__form--placeholder--title"
+                            id="input-title"
+                            type="text"
+                            placeholder="Add title" />
+                        <input
+                            class="container__form--placeholder--description"
+                            id="input-description"
+                            type="text"
+                            placeholder="Add description" />
+                            <input id="input-id" type="hidden">
+                        <img
+                            class="add__image"
+                            id="add-img"
+                            src="src/assets/plus.png" />
                     </div>
-                    <ul class="task__list" id="task-list">
 
-                    </ul> 
+                    <form>
+                        <label for="filter">Sort task by:</label>
+                        <select name="filter" id="filter">
+                            <option id="create-date" value="task.createdAt">Creation Date</option>
+                            <option id="due-date" value="dueDate">Due Date</option>
+                            <option id="completed" value="completed">State</option>
+                        </select>
+                        <br /><br />
+                        <input id="sort-button" type="submit" value="Sort" />
+                    </form>
+                    <ul class="task__list" id="task-list"></ul>
                 </section>
             </div>
         </main>
-        <script src="./dom/index.js"></script>
+        <script src="src/js/index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>

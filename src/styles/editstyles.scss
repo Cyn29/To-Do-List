@@ -1,0 +1,44 @@
+
+#title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    margin-left: 1rem;
+}
+
+input {
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+button {
+    height: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.edit__img {
+    height: 17rem;
+}
+
+@media (min-width: 600px) {
+
+    #title {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 5rem;
+        margin-left: 1rem;
+    }
+    
+    input, button {
+        height: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .edit__img {
+        margin-top: 1rem;
+        height: 25rem;
+    }
+
+}

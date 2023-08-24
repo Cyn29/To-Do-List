@@ -29,7 +29,7 @@
                             id="input-description"
                             type="text"
                             placeholder="Add description" />
-                            <input id="input-id" type="hidden">
+                        <input id="input-id" type="hidden" />
                         <img
                             class="add__image"
                             id="add-img"
@@ -38,10 +38,11 @@
 
                     <form>
                         <label for="filter">Sort task by:</label>
-                        <select name="filter" id="filter">
-                            <option id="create-date" value="task.createdAt">Creation Date</option>
-                            <option id="due-date" value="dueDate">Due Date</option>
-                            <option id="completed" value="completed">State</option>
+                        <select name="filter" id="filter-selected">
+                            <option value="createdAt">Creation Date</option>
+                            <option value="dueDate">Due Date</option>
+                            <option value="completed">Completed</option>
+                            <option value="pending">Pending</option>
                         </select>
                         <br /><br />
                         <input id="sort-button" type="submit" value="Sort" />

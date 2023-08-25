@@ -132,7 +132,7 @@ async function postCheckedTask(id, checkbox) {
 
 async function editTask(id) {
     localStorage.setItem("editId", id);
-    window.location.href = "edit.html";
+    window.location.href = "../../edit.html";
 }
 
 async function deleteTask(id) {
@@ -143,24 +143,9 @@ async function deleteTask(id) {
         denyButtonText: `Don't delete`,
     }).then(async (result) => {
         if (result.isConfirmed) {
-            try {
-                const deleteResult = await fetch(`http://localhost:3000/tasks/${id}`, {
-                    method: "DELETE",
-                });
-
-                if (deleteResult.ok) {
-
-                    const taskItem = document.getElementById(id);
-                    if (taskItem) {
-                        taskItem.remove();
-                    }
-                } else {
-                    Swal.fire("Failed to delete task", "", "error");
-                }
-            } catch (error) {
-                console.error("Error deleting task:", error);
-                Swal.fire("An error occurred while deleting the task", "", "error");
-            }
+            await fetch(`http://localhost:3000/tasks/${id}`, {
+                method: "DELETE",
+            });
         } else if (result.isDenied) {
             Swal.fire("Task has not been deleted", "", "info");
         }

@@ -26,8 +26,6 @@ addTaskIcon.addEventListener("click", async () => {
     let inputTitle = textTitle.value;
     let inputDescription = textDescription.value;
     const currentDate = new Date();
-
-    // Crear una nueva fecha sumando 15 días a la fecha actual
     const dueDate = new Date(currentDate);
     dueDate.setDate(currentDate.getDate() + 15);
     const textDate = `${currentDate.getFullYear()}-${(
@@ -72,14 +70,9 @@ addTaskIcon.addEventListener("click", async () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const sortButton = document.getElementById("sort-button");
-    const filterSelect = document.getElementById("filter-selected");
-    const taskList = document.getElementById("task-list");
-
     sortButton.addEventListener("click", async (event) => {
         event.preventDefault();
         const selectedFilter = filterSelect.value;
-        console.log(selectedFilter);
         let result = await fetch("http://localhost:3000/tasks");
         let data = await result.json();
 
@@ -153,7 +146,7 @@ async function deleteTask(id) {
             await fetch(`http://localhost:3000/tasks/${id}`, {
                 method: "DELETE",
             });
-            showTasksInScreen(); // Refresh task list after deletion
+            showTasksInScreen(); 
         } else if (result.isDenied) {
             Swal.fire("Task has not been deleted", "", "info");
         }

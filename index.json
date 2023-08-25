@@ -3,8 +3,10 @@
     {
       "title": "prueba 1",
       "description": "prueba 1",
-      "id": 1,
-      "completed": false
+      "createdAt": "2023-08-25",
+      "dueDate": "2023-09-10",
+      "completed": false,
+      "id": 1
     },
     {
       "title": "prueba 2",
@@ -25,7 +27,10 @@
     {
       "title": "prueba 4",
       "description": "prueba 4",
-      "id": 4
+      "createdAt": "2023-05-23",
+      "dueDate": "2023-06-07",
+      "completed": false,
+      "id": 3
     },
     {
       "title": "prueba 5",

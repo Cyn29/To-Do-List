@@ -146,7 +146,6 @@ async function deleteTask(id) {
             await fetch(`http://localhost:3000/tasks/${id}`, {
                 method: "DELETE",
             });
-            showTasksInScreen(); 
         } else if (result.isDenied) {
             Swal.fire("Task has not been deleted", "", "info");
         }

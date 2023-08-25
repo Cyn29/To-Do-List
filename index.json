@@ -5,15 +5,15 @@
       "description": "TAREA 1",
       "createdAt": "2023-03-01",
       "dueDate": "2023-03-15",
-      "completed": false,
-      "id": 2
+      "completed": true,
+      "id": 1
     },
     {
       "title": "TAREA 2",
       "description": "TAREA 2",
       "createdAt": "2023-04-01",
       "dueDate": "2023-04-15",
-      "completed": false,
+      "completed": true,
       "id": 2
     },
     {
@@ -21,7 +21,7 @@
       "description": "TAREA 3",
       "createdAt": "2023-01-01",
       "dueDate": "2023-01-15",
-      "completed": false,
+      "completed": true,
       "id": 3
     },
     {
@@ -29,16 +29,16 @@
       "description": "TAREA 4",
       "createdAt": "2023-02-01",
       "dueDate": "2023-02-15",
-      "completed": false,
+      "completed": true,
       "id": 4
     },
     {
-      "title": "prueba 2",
-      "description": "prueba 2",
+      "title": "TAREA 5",
+      "description": "TAREA 5",
       "createdAt": "2023-08-01",
       "dueDate": "2023-08-15",
-      "completed": false,
-      "id": 4
+      "completed": true,
+      "id": 5
     }
   ]
 }
